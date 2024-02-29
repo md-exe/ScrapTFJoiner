@@ -1,0 +1,12 @@
+D:\VS\ScrapTF\bin\Debug\ScrapTF.exe.config
+D:\VS\ScrapTF\bin\Debug\ScrapTF.exe
+D:\VS\ScrapTF\bin\Debug\ScrapTF.pdb
+D:\VS\ScrapTF\bin\Debug\WindowsInput.dll
+D:\VS\ScrapTF\bin\Debug\WindowsInput.pdb
+D:\VS\ScrapTF\bin\Debug\WindowsInput.xml
+D:\VS\ScrapTF\obj\Debug\ScrapTF.csproj.AssemblyReference.cache
+D:\VS\ScrapTF\obj\Debug\ScrapTF.csproj.SuggestedBindingRedirects.cache
+D:\VS\ScrapTF\obj\Debug\ScrapTF.csproj.CoreCompileInputs.cache
+D:\VS\ScrapTF\obj\Debug\ScrapTF.csproj.CopyComplete
+D:\VS\ScrapTF\obj\Debug\ScrapTF.exe
+D:\VS\ScrapTF\obj\Debug\ScrapTF.pdb
