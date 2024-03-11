@@ -3,7 +3,7 @@
 function modifySubtitle() {
   var subtitleDiv = document.querySelector('.subtitle');
   if (subtitleDiv) {
-    subtitleDiv.textContent = 'Title';
+    subtitleDiv.textContent = 'TITLE';
   }
 }
 
@@ -11,7 +11,7 @@ function modifySubtitle() {
 function modifyRaffleMessage() {
   var raffleMessageDiv = document.querySelector('.raffle-message');
   if (raffleMessageDiv) {
-    raffleMessageDiv.textContent = 'Message';
+    raffleMessageDiv.textContent = 'MESSAGE';
   }
 }
 
@@ -23,7 +23,7 @@ function removeEnteredMessage() {
   }
 }
 
-// Функция для удаления div с классом "raffle-message raffle-entered-msg"
+// Функция для удаления div с классом "poll-question"
 function removePollQuestion() {
   var pollQuestionDiv = document.querySelector('.poll-question');
   if (pollQuestionDiv) {
@@ -31,7 +31,7 @@ function removePollQuestion() {
   }
 }
 
-// Функция для удаления div с классом "raffle-message raffle-entered-msg"
+// Функция для удаления div с классом "poll-form"
 function removePollForm() {
   var pollFormDiv = document.querySelector('.poll-form');
   if (pollFormDiv) {
@@ -39,9 +39,42 @@ function removePollForm() {
   }
 }
 
+// Функция для удаления div с классом "raffle-comments"
+function removeRaffleComments() {
+  var raffleCommentsDiv = document.querySelector('.raffle-comments');
+  if (raffleCommentsDiv) {
+    raffleCommentsDiv.remove();
+  }
+}
+
+// Функция для удаления div с классом "h4"
+function removeHFour() {
+  var hFourDiv = document.querySelector('h4');
+  if (hFourDiv) {
+    hFourDiv.remove();
+  }
+}
+
+var style = document.createElement('style');
+style.textContent = `
+    .btn.btn-embossed.btn-info.btn-lg {
+        font-size: 40px;
+    }
+    .auction-well .subtitle, .raffle-well .subtitle {
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+    .btn-lg, .btn-group-lg>.btn {
+        font-size: 40px;
+    }
+`;
+document.head.appendChild(style);
+
 // Вызов функций для изменения содержимого
 modifySubtitle();
 modifyRaffleMessage();
 removeEnteredMessage();
 removePollQuestion();
 removePollForm();
+removeRaffleComments();
+removeHFour();

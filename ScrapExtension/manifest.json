@@ -1,8 +1,8 @@
 {
   "manifest_version": 2,
-  "name": "Custom Content Modifier",
+  "name": "Scrap.tf",
   "version": "1.0",
-  "description": "Extension to modify specific div content",
+  "description": "Расширение для ScrapTFJoiner",
   "permissions": [
     "activeTab"
   ],
