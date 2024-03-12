@@ -17,12 +17,13 @@ namespace ScrapTF
             while(true)
             {
                 Random rndTimer = new Random();
-                int value = rndTimer.Next(4018, 4537);
+                int value = rndTimer.Next(3856, 4323); // 4018, 4537 - оптимально
                 Thread.Sleep(value);
                 InputSimulator simulator = new InputSimulator();
                 simulator.Mouse.LeftButtonClick();
 
-                Thread.Sleep(rndTimer.Next(723, 1222));
+                // Таймер для того, чтобы убедиться, что в раздачу зашёл
+                //Thread.Sleep(rndTimer.Next(723, 1222));
 
                 simulator.Keyboard.KeyDown(WindowsInput.Native.VirtualKeyCode.LCONTROL);
                 simulator.Keyboard.KeyPress(WindowsInput.Native.VirtualKeyCode.VK_W);
