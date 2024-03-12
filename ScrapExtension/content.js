@@ -55,6 +55,7 @@ function removeHFour() {
   }
 }
 
+// Увеличение кнопки входа на раздачу
 var style = document.createElement('style');
 style.textContent = `
     .btn.btn-embossed.btn-info.btn-lg {
