@@ -29,6 +29,8 @@ namespace ScrapTF
                 simulator.Keyboard.KeyPress(WindowsInput.Native.VirtualKeyCode.VK_W);
                 simulator.Keyboard.KeyUp(WindowsInput.Native.VirtualKeyCode.LCONTROL);
                 Console.WriteLine("Вкладка закрыта.");
+
+                // жопа
             }
         }
     }
