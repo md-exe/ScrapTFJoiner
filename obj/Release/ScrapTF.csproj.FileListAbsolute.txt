@@ -20,3 +20,14 @@ D:\VS\ScrapTFJoiner\obj\Release\ScrapTF.csproj.CoreCompileInputs.cache
 D:\VS\ScrapTFJoiner\obj\Release\ScrapTF.csproj.CopyComplete
 D:\VS\ScrapTFJoiner\obj\Release\ScrapTF.exe
 D:\VS\ScrapTFJoiner\obj\Release\ScrapTF.pdb
+G:\Work\VS_projects\ScrapTFJoiner\bin\Release\ScrapTF.exe.config
+G:\Work\VS_projects\ScrapTFJoiner\bin\Release\ScrapTF.exe
+G:\Work\VS_projects\ScrapTFJoiner\bin\Release\ScrapTF.pdb
+G:\Work\VS_projects\ScrapTFJoiner\bin\Release\WindowsInput.dll
+G:\Work\VS_projects\ScrapTFJoiner\bin\Release\WindowsInput.pdb
+G:\Work\VS_projects\ScrapTFJoiner\bin\Release\WindowsInput.xml
+G:\Work\VS_projects\ScrapTFJoiner\obj\Release\ScrapTF.csproj.AssemblyReference.cache
+G:\Work\VS_projects\ScrapTFJoiner\obj\Release\ScrapTF.csproj.CoreCompileInputs.cache
+G:\Work\VS_projects\ScrapTFJoiner\obj\Release\ScrapTF.csproj.CopyComplete
+G:\Work\VS_projects\ScrapTFJoiner\obj\Release\ScrapTF.exe
+G:\Work\VS_projects\ScrapTFJoiner\obj\Release\ScrapTF.pdb
