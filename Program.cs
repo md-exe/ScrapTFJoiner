@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Threading;
 using WindowsInput;
+using System.Diagnostics;
 
 namespace ScrapTF
 {
@@ -8,16 +9,25 @@ namespace ScrapTF
     {
         static void Main(string[] args)
         {
+            bool stop = false;
             Console.WriteLine("Нажмите любую клавишу, чтобы начать.");
             Console.ReadKey();
             Console.Clear();
             Thread.Sleep(1500);
             Console.WriteLine("Поехали!");
 
-            while(true)
+            while(!stop)
             {
+                // Проверка приостановки программы нажатием ENTER
+                if (Console.KeyAvailable && Console.ReadKey(true).Key == ConsoleKey.Enter)
+                {
+                    Console.WriteLine("Выполнение программы приостановлено. Нажмите ENTER, чтобы продолжить.");
+                    Console.ReadLine();
+                    Console.Clear();
+                }
+
                 Random rndTimer = new Random();
-                int value = rndTimer.Next(3420, 3823); // 4018, 4537 - оптимально
+                int value = rndTimer.Next(2881, 3365); // 4018, 4537 - оптимально
                 Thread.Sleep(value);
                 InputSimulator simulator = new InputSimulator();
                 simulator.Mouse.LeftButtonClick();
@@ -30,8 +40,42 @@ namespace ScrapTF
                 simulator.Keyboard.KeyUp(WindowsInput.Native.VirtualKeyCode.LCONTROL);
                 Console.WriteLine("Вкладка закрыта.");
 
-                // жопа
+                //if(!isScrap())
+                //{
+                //    stop = true;
+                //    Console.WriteLine("Текущая вкладка не является Scrap.tf");
+                //    Console.ReadLine();
+                //}
             }
         }
+
+        // Проверка вкладок на наличие scrap.tf = не работает
+        //static bool isScrap()
+        //{
+        //    Process[] processesChrome = Process.GetProcessesByName("chrome");
+        //    Process[] processesVivaldi = Process.GetProcessesByName("vivaldi");
+
+        //    foreach (Process process in processesChrome)
+        //    {
+        //        IntPtr mainWindowHandle = process.MainWindowHandle;
+        //        string title = process.MainWindowTitle;
+
+        //        if (title.Contains("scrap.tf"))
+        //        {
+        //            return true;
+        //        }
+        //    }
+        //    foreach (Process process in processesVivaldi)
+        //    {
+        //        IntPtr mainWindowHandle = process.MainWindowHandle;
+        //        string title = process.MainWindowTitle;
+
+        //        if (title.Contains("scrap.tf"))
+        //        {
+        //            return true;
+        //        }
+        //    }
+        //    return false;
+        //}
     }
 }
