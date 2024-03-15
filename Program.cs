@@ -9,13 +9,19 @@ namespace ScrapTF
     {
         static void Main(string[] args)
         {
+            // Переменная остановки
             bool stop = false;
+
+            // Ожидание начала выполнения
             Console.WriteLine("Нажмите любую клавишу, чтобы начать.");
             Console.ReadKey();
+            // Очистка консоли
             Console.Clear();
+            // Таймер подготовки
             Thread.Sleep(1500);
             Console.WriteLine("Поехали!");
 
+            // Пока не остановлено
             while(!stop)
             {
                 // Проверка приостановки программы нажатием ENTER
@@ -25,16 +31,20 @@ namespace ScrapTF
                     Console.ReadLine();
                     Console.Clear();
                 }
-
+                // Рандомайзер
                 Random rndTimer = new Random();
                 int value = rndTimer.Next(2881, 3365); // 4018, 4537 - оптимально
+                // Сон
                 Thread.Sleep(value);
+                // Инициализация эмуляции клавиш
                 InputSimulator simulator = new InputSimulator();
+                // Эмуляция нажатия ЛКМ
                 simulator.Mouse.LeftButtonClick();
 
                 // Таймер для того, чтобы убедиться, что в раздачу зашёл
                 Thread.Sleep(rndTimer.Next(723, 1222));
 
+                // Зажатие CTRL, нажатие W, отжатие CTRL
                 simulator.Keyboard.KeyDown(WindowsInput.Native.VirtualKeyCode.LCONTROL);
                 simulator.Keyboard.KeyPress(WindowsInput.Native.VirtualKeyCode.VK_W);
                 simulator.Keyboard.KeyUp(WindowsInput.Native.VirtualKeyCode.LCONTROL);
