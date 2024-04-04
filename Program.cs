@@ -33,7 +33,7 @@ namespace ScrapTF
                 }
                 // Рандомайзер
                 Random rndTimer = new Random();
-                int value = rndTimer.Next(2881, 3365); // 4018, 4537 - оптимально
+                int value = rndTimer.Next(2981, 3365); // 4018, 4537 - оптимально
                 // Сон
                 Thread.Sleep(value);
                 // Инициализация эмуляции клавиш
