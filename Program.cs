@@ -38,7 +38,7 @@ namespace ScrapTF
                 }
                 // Рандомайзер
                 Random rndTimer = new Random();
-                int value = rndTimer.Next(2981, 3365); // 4018, 4537 - оптимально
+                int value = rndTimer.Next(4000, 4500); // 4000, 4550 - оптимально
                 // Сон
                 Thread.Sleep(value);
                 // Инициализация эмуляции клавиш
@@ -47,7 +47,7 @@ namespace ScrapTF
                 simulator.Mouse.LeftButtonClick();
 
                 // Таймер для того, чтобы убедиться, что в раздачу зашёл
-                Thread.Sleep(rndTimer.Next(723, 1222));
+                Thread.Sleep(rndTimer.Next(750, 1250)); // 750, 1250 - оптимально
 
                 // Зажатие CTRL, нажатие W, отжатие CTRL
                 simulator.Keyboard.KeyDown(WindowsInput.Native.VirtualKeyCode.LCONTROL);
